@@ -7,10 +7,10 @@
 		</header>
 
 		<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
-
-		<section id="thumnail-wrapper">
+{% for post in posts %}
+		<section id="thumnail-wrapper" style="background-color:{{ post.bgcolor }};">
 			<section id="thumbnails" class="clearfix">
-				{% for post in posts %}
+				
 					<a href='/{{ post.path }}'>
 						<img class="2x" src="{{ post.thumbnail }}"/>
 						<h1 class="clearfix">{{ post.title }}</h1>
@@ -18,9 +18,10 @@
 						<caption>{{ post.tags }}</caption>
 						
 					</a>
-				{% endfor %}
+			
 			</section>
 		</section>	
+		{% endfor %}
 
 		{% block footer %}
 			<footer id="footer">

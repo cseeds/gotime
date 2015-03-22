@@ -58,28 +58,36 @@ body {
 	z-index: 100;
 }
 
-#wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 40px 100px 40px;
-}
+
 
 #wrapper.post {
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center;
 	max-width: 1200px;
+	margin: 0 auto;
+	
 }
 
 #header {
 	border-bottom: 1px solid #eee;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0 0 0;
 }
 
 img {
 	max-width: 100%;
 }
+#thumnail-wrapper{padding:100px 0;}
 
 #thumbnails {
 	margin: 0 auto;
 	margin-top: 60px;
 	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	
 }
 
 
@@ -136,9 +144,11 @@ img {
 #footer { 
 	box-shadow: inset 0 1px 0 #eee;
 	padding: 40px 0 0 0;
-	margin-top: 100px; 
+	margin: 100px auto; 
 	position: relative;
-}
+	text-align: center;
+	max-width: 1200px;
+}		
 
 #footer p {
 	float: left;
@@ -207,7 +217,12 @@ p.small {
 /* Post Page */
 #header {
 	border-bottom: 1px solid #eee;
-	margin-bottom: 20px;
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	
 }
 
 .post {
@@ -310,26 +325,32 @@ p.small {
 }
 
 @media screen and (max-width: 540px) {
-	#wrapper { padding: 20px 40px; }
+	#wrapper { /*padding: 20px 40px;*/ }
 	#header { margin-bottom: 40px; }
 	h1 { font-size: 17px; }
 	#footer { margin-top: 40px; padding-bottom: 20px; }
+	#thumbnails p{ margin: 0 5%;}
+	#thumbnails a {width: 95%;}
+	#thumnail-wrapper{padding: 25px 0}
 }
 
 @media screen and (max-width:440px) {
 	#thumbnails a:nth-child(n) {
-		width: 100%;
-		max-width: 300px;
+		width: 95%;
+		/*max-width: 300px;*/
 		margin: 0 auto;
 		margin-top: 20px;
 		display: inline-block;
 		float: none;
 	}
 
+
+#thumbnails p{ margin: 0 5%;}
+
 	a#docs { display: none; }
 	#thumbnails a:first-child { margin-top: 0; }
 	#header { text-align: center; margin-bottom: 0; }
-	#wrapper { padding: 20px 20px 40px 20px; }
+	#wrapper { /*padding: 20px 20px 40px 20px; */}
 	.post { margin-bottom: 40px; }
 	#footer { text-align: center; padding-bottom: 15px; }
 }
