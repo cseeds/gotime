@@ -59,13 +59,13 @@ body {
 }
 
 #wrapper {
-	max-width: 880px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 40px 100px 40px;
 }
 
 #wrapper.post {
-	max-width: 880px;
+	max-width: 1200px;
 }
 
 #header {
@@ -82,44 +82,41 @@ img {
 	text-align: center;
 }
 
-#thumbnails a {
-	width: 49%;
-	float: left;
-	position: relative;
-}
 
 #thumbnails a {
 		margin-right: 2%;
 		margin-top: 2%;
+		position: relative;
+}
 }
 
-#thumbnails a:nth-child(1), #thumbnails a:nth-child(2) {
+/*#thumbnails a:nth-child(1), #thumbnails a:nth-child(2) {
 		margin-top: 0;
 }
 
 #thumbnails a:nth-child(2n) {
 	margin-right: 0;
-}
+}*/
 
-#thumbnails a,#thumbnails a span {
+/*#thumbnails a,#thumbnails a span {
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
-}
+}*/
 
 #thumbnails a img {
-	display: block;
+
 	background: #fff;
 	width: 100%;
 	height: auto;
+	float:none;
 }
 
-#thumbnails a span {
+#thumbnails a  {
 	color: #999;
 	display: inline-block;
-	display: none;
 	font-size: 15px;
 	font-weight: 400;
 	margin: 20px 0;
@@ -133,6 +130,8 @@ img {
 	opacity: 1;
 	visibility: visible;
 }
+
+#thumbnails p {margin:0 25%;}
 
 #footer { 
 	box-shadow: inset 0 1px 0 #eee;
@@ -176,11 +175,10 @@ p {
 }
 
 h1 {
-	display: inline-block;
 	line-height: 100%;
 	color: #222;
 	font-weight: 500;
-	font-size: 19px;
+	font-size: 2em;
 	margin: 0;
 	padding-bottom: 20px;
 }

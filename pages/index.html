@@ -8,22 +8,27 @@
 
 		<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
 
-		<section id="thumbnails" class="clearfix">
-			{% for post in posts %}
-				<a href='/{{ post.path }}'>
-					<img class="2x" width="300" height="300" src="{{ post.thumbnail }}"/>
-					<span>{{ post.title }}</span>
-				</a>
-			{% endfor %}
-		</section>
+		<section id="thumnail-wrapper">
+			<section id="thumbnails" class="clearfix">
+				{% for post in posts %}
+					<a href='/{{ post.path }}'>
+						<img class="2x" src="{{ post.thumbnail }}"/>
+						<h1 class="clearfix">{{ post.title }}</h1>
+						<p>{{ post.body|truncatewords:30 }}</p>
+						<caption>{{ post.tags }}</caption>
+						
+					</a>
+				{% endfor %}
+			</section>
+		</section>	
 
 		{% block footer %}
 			<footer id="footer">
-				<p class="small">A short description.</p>
+				<p class="small">Christopher Seeds </p>
 			</footer>
 		{% endblock footer %}
 	</section>
 
-	<a href="http://cactusformac.com/?utm_source=templates&utm_medium=badge&utm_campaign=portfolio-template"><img id="badge" class="2x" src="{% static '/images/badge.png' %}"/></a>
+	
 	
 {% endblock content %}
