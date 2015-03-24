@@ -11,11 +11,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* Spacing */
 .post p,.post ul {
-	max-width: 600px;
+	max-width: 700px;
 	margin: 0 auto;
 }
 
 .post p {
+	text-align: left;	
+	line-height: 1.7em;
 	margin-bottom: 20px;
 }
 
@@ -36,7 +38,7 @@ html,body {
 }
 
 body {
-	font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 18px/1 'Sorts Mill Goudy', serif;
 	color: #777;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -79,7 +81,7 @@ body {
 img {
 	max-width: 100%;
 }
-#thumnail-wrapper{padding:100px 0;}
+#thumnail-wrapper{padding:50px 0;}
 
 #thumbnails {
 	margin: 0 auto;
@@ -125,7 +127,7 @@ img {
 #thumbnails a  {
 	color: #999;
 	display: inline-block;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 400;
 	margin: 20px 0;
 }
@@ -140,6 +142,17 @@ img {
 }
 
 #thumbnails p {margin:0 25%;}
+
+#thumbnails a .tags{
+	margin: 2% auto;
+	padding:1% 0;
+	font: 14px 'Montserrat', sans-serif; 
+	text-transform: uppercase; 
+	letter-spacing: .3em;
+	border-top:1px solid #cdcdcd;
+	width: 30%;
+	text-align: center;
+} 
 
 #footer { 
 	box-shadow: inset 0 1px 0 #eee;
@@ -188,8 +201,8 @@ h1 {
 	line-height: 100%;
 	color: #222;
 	font-weight: 500;
-	font-size: 2em;
-	margin: 0;
+	font-size: 2.5em;
+	margin: 25px 0 10px;
 	padding-bottom: 20px;
 }
 
@@ -332,6 +345,7 @@ p.small {
 	#thumbnails p{ margin: 0 5%;}
 	#thumbnails a {width: 95%;}
 	#thumnail-wrapper{padding: 25px 0}
+	#thumbnails a .tags{width: 80%;margin: 10px auto;padding:10px; font-size:.6em;
 }
 
 @media screen and (max-width:440px) {
