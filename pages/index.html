@@ -8,11 +8,11 @@
 
 		<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
 {% for post in posts %}
-		<section id="thumnail-wrapper" style="background-color:{{ post.bgcolor }};">
+		<section id="thumnail-wrapper" style="background-image:url('http://placekitten.com/1000/500');">
 			<section id="thumbnails" class="clearfix">
 				
 					<a href='/{{ post.path }}'>
-						<img class="2x" src="{{ post.thumbnail }}"/>
+						<!-- <img class="2x" src="{{ post.thumbnail }}"/> -->
 						<h1 class="clearfix">{{ post.title }}</h1>
 						<p>{{ post.body|truncatewords:30 }}</p>
 						<p class="tags">{{ post.tags }}</p>
