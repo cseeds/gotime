@@ -1,0 +1,75 @@
+body {
+  font-family: "Sorts Mill Goudy", Georgia, serif;
+  color: #B5B1A9; }
+
+#wrapper {
+  padding-top: 100px;
+  background-color: #414141; }
+
+#thumbnails a {
+  color: #B5B1A9; }
+
+#header {
+  border: none;
+  max-width: 1120px;
+  margin: 0 auto; }
+
+#header h1, #project-block h1 {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: .9em;
+  font-weight: bold;
+  color: #849BF7;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  width: 92%; }
+
+#header h1 span {
+  color: #B5B1A9; }
+
+#header h1 div {
+  float: right; }
+
+#intro-block {
+  font-size: 1.3em;
+  margin-top: 50px;
+  width: 80%; }
+
+#project-wrapper {
+  width: 100%;
+  padding: 2% 0 5%; }
+
+#project-block {
+  max-width: 1120px;
+  height: 200px;
+  margin: 0 auto;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  color: #849BF7;
+  text-align: left; }
+
+#project-wrapper .project-tags {
+  margin: 10px 0 0; }
+
+.post img {
+  max-width: 1120px; }
+
+.post p {
+  margin: 0 20% 0 10%; }
+
+#project-block .tags {
+  font-family: "Sorts Mill Goudy", Georgia, serif;
+  color: #B5B1A9; }
+
+#footer {
+  width: 1120px;
+  margin: 25px auto 75px;
+  box-shadow: none; }
+
+/* BEGIN RWD STYLES */
+@media screen and (max-width: 800px) {
+  #wrapper {
+    padding-top: 50px; } }
+@media screen and (max-width: 440px) {
+  #wrapper {
+    padding-top: 25px; } }
+
+/*# sourceMappingURL=personal.css.map */

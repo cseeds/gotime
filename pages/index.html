@@ -2,19 +2,22 @@
 {% block content %}
 
 	<section id="wrapper">
-		<header id="header">
+				<header id="header">
 			<h1>{% block title %}{{ block.super }}{% endblock title %}</h1>
+			<p id="intro-block">
+				I design impactful experiences across screens and paper. I'm currently designing products at Plated. I am a curious designer who is always looking to learn something new. I design impactful experiences across screens and paper. I'm currently designing products at Plated. I am a curious designer who …
+			</p>
 		</header>
-
-		<a id="docs" href="http://cactusformac.com/redirect/#documentation">Documentation</a>
+	</section>
+		
 {% for post in posts %}
-		<section id="thumnail-wrapper" style="background-image:url('http://placekitten.com/1000/500');">
-			<section id="thumbnails" class="clearfix">
+		<section id="project-wrapper" style="background-color:#{{ post.bgcolor }};">
+			<section id="project-block" class="clearfix">
 				
 					<a href='/{{ post.path }}'>
 						<!-- <img class="2x" src="{{ post.thumbnail }}"/> -->
 						<h1 class="clearfix">{{ post.title }}</h1>
-						<p>{{ post.body|truncatewords:30 }}</p>
+						<!-- <p>{{ post.body|truncatewords:30 }}</p> -->
 						<p class="tags">{{ post.tags }}</p>
 						
 					</a>

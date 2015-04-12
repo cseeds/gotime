@@ -10,14 +10,12 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* Spacing */
-.post p,.post ul {
-	max-width: 700px;
+/*.post p,.post ul {
+	max-width: 600px;
 	margin: 0 auto;
-}
+}*/
 
 .post p {
-	text-align: left;	
-	line-height: 1.7em;
 	margin-bottom: 20px;
 }
 
@@ -27,7 +25,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	max-width: 800px;
 	width: 100%;
 }
-
+.img-wrapper{padding:10px;}
 .post img+img {
 	margin-top: -20px;
 }
@@ -38,7 +36,7 @@ html,body {
 }
 
 body {
-	font: 18px/1 'Sorts Mill Goudy', serif;
+	font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #777;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -60,74 +58,69 @@ body {
 	z-index: 100;
 }
 
-
+#wrapper {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 50px 40px 50px 40px;
+}
 
 #wrapper.post {
-	margin: 0 auto;
-	margin-top: 60px;
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	
+	max-width: 1120px;
 }
 
 #header {
 	border-bottom: 1px solid #eee;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0 0 0;
 }
 
 img {
 	max-width: 100%;
 }
-#thumnail-wrapper{padding:50px 0;}
 
 #thumbnails {
 	margin: 0 auto;
 	margin-top: 60px;
 	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	
 }
-
 
 #thumbnails a {
-		margin-right: 2%;
-		margin-top: 2%;
-		position: relative;
-}
+	width: 33.333%;
+	float: left;
+	position: relative;
 }
 
-/*#thumbnails a:nth-child(1), #thumbnails a:nth-child(2) {
-		margin-top: 0;
+#thumbnails a {
+		/*margin-right: 2%;*/
+		margin-top: 2%;
 }
+/*
+#thumbnails a:nth-child(1), #thumbnails a:nth-child(2) {
+		margin-top: 0;
+}*/
 
 #thumbnails a:nth-child(2n) {
 	margin-right: 0;
-}*/
+}
 
-/*#thumbnails a,#thumbnails a span {
+#thumbnails a,#thumbnails a span {
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	-ms-transition: all 0.2s ease;
 	-o-transition: all 0.2s ease;
 	transition: all 0.2s ease;
-}*/
+}
 
 #thumbnails a img {
-
+	display: block;
 	background: #fff;
 	width: 100%;
 	height: auto;
-	float:none;
 }
 
-#thumbnails a  {
+#thumbnails a span {
 	color: #999;
 	display: inline-block;
-	font-size: 18px;
+	display: ;
+	font-size: 15px;
 	font-weight: 400;
 	margin: 20px 0;
 }
@@ -141,27 +134,12 @@ img {
 	visibility: visible;
 }
 
-#thumbnails p {margin:0 25%;}
-
-#thumbnails a .tags{
-	margin: 2% auto;
-	padding:1% 0;
-	font: 14px 'Montserrat', sans-serif; 
-	text-transform: uppercase; 
-	letter-spacing: .3em;
-	border-top:1px solid #cdcdcd;
-	width: 30%;
-	text-align: center;
-} 
-
 #footer { 
 	box-shadow: inset 0 1px 0 #eee;
 	padding: 40px 0 0 0;
-	margin: 100px auto; 
+	margin-top: 100px; 
 	position: relative;
-	text-align: center;
-	max-width: 1200px;
-}		
+}
 
 #footer p {
 	float: left;
@@ -198,11 +176,12 @@ p {
 }
 
 h1 {
+	display: inline-block;
 	line-height: 100%;
 	color: #222;
 	font-weight: 500;
-	font-size: 2.5em;
-	margin: 25px 0 10px;
+	font-size: 19px;
+	margin: 0;
 	padding-bottom: 20px;
 }
 
@@ -230,12 +209,7 @@ p.small {
 /* Post Page */
 #header {
 	border-bottom: 1px solid #eee;
-	margin: 0 auto;
-	margin-top: 60px;
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	
+	margin-bottom: 20px;
 }
 
 .post {
@@ -337,34 +311,27 @@ p.small {
 	right: -3px;
 }
 
-@media screen and (max-width: 540px) {
-	#wrapper { /*padding: 20px 40px;*/ }
+@media screen and (max-width: 800px) {
+	#wrapper { padding: 20px 40px; }
 	#header { margin-bottom: 40px; }
 	h1 { font-size: 17px; }
 	#footer { margin-top: 40px; padding-bottom: 20px; }
-	#thumbnails p{ margin: 0 5%;}
-	#thumbnails a {width: 95%;}
-	#thumnail-wrapper{padding: 25px 0}
-	#thumbnails a .tags{width: 80%;margin: 10px auto;padding:10px; font-size:.6em;
 }
 
 @media screen and (max-width:440px) {
 	#thumbnails a:nth-child(n) {
-		width: 95%;
-		/*max-width: 300px;*/
+		width: 100%;
+		max-width: 300px;
 		margin: 0 auto;
 		margin-top: 20px;
 		display: inline-block;
 		float: none;
 	}
 
-
-#thumbnails p{ margin: 0 5%;}
-
 	a#docs { display: none; }
 	#thumbnails a:first-child { margin-top: 0; }
 	#header { text-align: center; margin-bottom: 0; }
-	#wrapper { /*padding: 20px 20px 40px 20px; */}
+	#wrapper { padding: 20px 20px 40px 20px; }
 	.post { margin-bottom: 40px; }
 	#footer { text-align: center; padding-bottom: 15px; }
 }

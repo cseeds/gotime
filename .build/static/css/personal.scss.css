@@ -1,0 +1,40 @@
+$serif-stack:'Sorts Mill Goudy', Georgia, serif;
+$sans-stack: 'Montserrat', Helvetica, sans-serif;
+$purple: #849BF7;
+$ltgray: #B5B1A9;
+
+
+
+body{font-family: $serif-stack; color:$ltgray;}
+
+#wrapper{padding-top: 100px;}
+
+#thumbnails a{color: $ltgray;}
+
+#header{border: none; }
+
+#header h1{font-family: $sans-stack; font-size: .9em; font-weight:bold; color:$purple;}
+
+#intro-block{font-size: 1.3em;}
+
+#thumbnails .project-title{font-family: $sans-stack; color: $purple;}
+
+#thumbnails .project-tags{margin: 10px 0 0;}
+
+.post img {max-width: 1120px;}
+.post p{margin:0 20% 0 10% ;}
+
+
+/* BEGIN RWD STYLES */
+@media screen and (max-width: 800px) {
+#wrapper{padding-top: 50px;}
+
+
+
+}
+
+@media screen and (max-width: 440px) {
+#wrapper{padding-top: 25px;}
+
+
+}
